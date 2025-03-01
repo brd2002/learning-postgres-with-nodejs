@@ -5,6 +5,7 @@ const client =  new Client({
 })
 
 // this function will create a table in the database
+
 async function createUsersTable(){
     await client.connect();
     const result = await client.query(`
