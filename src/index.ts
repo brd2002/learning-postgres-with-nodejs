@@ -1,7 +1,7 @@
 import { Client } from "pg";
 import {important} from './important';
 const client =  new Client({
-    connectionString : important.databaseUrl
+    connectionString : important.databaseUrl // database link from important.ts file neondb
 })
 
 async function createUsersTable(){
@@ -32,5 +32,5 @@ async function getUsers(){
     console.log(result.rows);
 }
 // createUsersTable();
-// insertUser('bharat ruidas', 'bharat@gmail.com', '123456');
+// insertUser('anusri ruidas', 'anu@gmail.com', '123456');
 getUsers();
